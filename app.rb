@@ -5,20 +5,20 @@ require 'json'
 configure do
   Mongoid.configure do |config|
     # Development
-    config.sessions = {
-      :default => {
-      :hosts => ["localhost:27017"],
-      :database => "my_db"
-    }
+    # config.sessions = {
+      # :default => {
+      # :hosts => ["localhost:27017"],
+      # :database => "my_db"
+    # }
 
     # Production
-    # config.sessions = {
-    #   :default => {
-    #   :hosts => ["<host>:<port>"],            # VM IP and VM Port
-    #   :database => "<database name>",         # Database Name   
-    #   :username => '<username>',              # User Name 
-    #   :password => '<password>'               # Password
-    # }
+     config.sessions = {
+       :default => {
+       :hosts => ["<host>:<port>"],            # VM IP and VM Port
+       :database => "<database name>",         # Database Name   
+       :username => '<username>',              # User Name 
+       :password => '<password>'               # Password
+     }
   }
   end
 end

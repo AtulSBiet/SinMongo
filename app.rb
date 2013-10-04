@@ -14,10 +14,10 @@ configure do
     # Production
      config.sessions = {
        :default => {
-       :hosts => ["<host>:<port>"],            # VM IP and VM Port
-       :database => "<database name>",         # Database Name   
-       :username => '<username>',              # User Name 
-       :password => '<password>'               # Password
+       :hosts => ["10.0.2.12:40477"],            # VM IP and VM Port
+       :database => "t",         # Database Name   
+       :username => 'avuxdpj8izsqqrrj',              # User Name 
+       :password => 'eclrsu49fk7lzwulidl8ae3ig18sd4w0'               # Password
      }
   }
   end
